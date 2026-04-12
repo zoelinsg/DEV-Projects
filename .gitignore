@@ -31,4 +31,8 @@ __pycache__/
 # coverage
 coverage/
 
+# local secrets
+server/gemini-key.txt
+
+# TypeScript build cache
 *.tsbuildinfo
