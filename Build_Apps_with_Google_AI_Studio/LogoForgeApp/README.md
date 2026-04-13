@@ -6,8 +6,8 @@ LogoForge is a lightweight React + TypeScript app that generates **SVG logo conc
 
 - Generate 1 logo or 3 variations
 - Structured JSON output with validation
-- Automatic retry on temporary AI response/format issues
-- SVG preview + download as `.svg`
+- Automatic retry on temporary AI response or formatting issues
+- SVG preview and download as `.svg`
 - Copy JSON output
 - Backend proxy to keep API keys off the client
 
@@ -37,7 +37,7 @@ LogoForgeApp/
 ```
 ## How It Works
 * The frontend collects logo inputs from the user
-* The frontend sends the request to /api/generate-logo
+* The frontend sends requests to the backend API
 * The backend securely calls the Gemini API
 * The backend validates the response and returns structured logo data
 * The frontend renders the SVG preview and related brand content
@@ -54,12 +54,11 @@ npm install
 cd ..
 ```
 3. Add environment variables
-
-Create a .env file inside the server/ folder:
+- Create a `.env` file inside the `server/` folder:
 ```bash
 GEMINI_API_KEY=YOUR_API_KEY_HERE
 ```
-You can also keep a template in:
+- You can keep a template in:
 ```bash
 server/.env.example
 ```
@@ -68,35 +67,35 @@ server/.env.example
 cd server
 npm start
 ```
-The backend runs on:
+- The backend runs on:
 ```bash
 http://localhost:8080
 ```
 5. Start the frontend
-
-Open another terminal in the project root:
+- Open another terminal in the project root:
 ```bash
 npm run dev
 ```
-The frontend runs on:
+- The frontend runs on:
 ```bash
 http://localhost:5173
 ```
 
 ## Security Notes
 * API keys are stored on the backend only
-* Do not commit .env files
-* The frontend no longer exposes the Gemini API key
-* Use .env.example for documentation only
+* Do not commit `.env` files
+* The frontend does not expose the Gemini API key
+* Use `.env.example` for documentation only
 
 ## Notes
-* This project is built for learning, portfolio, and demo purposes
+* This project was built for learning, experimentation, and demo purposes
 * Gemini responses may occasionally fail due to temporary high demand
 * Response validation and retry logic help improve reliability
 * Costs depend on your Gemini API plan and usage
+* Any deployment used for demonstrations may be temporary
 
 ## Future Improvements
-* Deploy frontend and backend to Google Cloud
 * Add rate limiting for public demo usage
-* Add Imagen-based visual preview generation
 * Improve error handling and fallback models
+* Add export presets or branding templates
+* Improve prompt tuning for more consistent SVG output
