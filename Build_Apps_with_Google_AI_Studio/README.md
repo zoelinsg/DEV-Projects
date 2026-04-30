@@ -99,3 +99,8 @@ http://localhost:5173
 * Improve error handling and fallback models
 * Add export presets or branding templates
 * Improve prompt tuning for more consistent SVG output
+
+## Demo
+[▶ Watch Demo on YouTube](https://youtu.be/E4a_cHElang)
+
+[![Demo Video](https://img.youtube.com/vi/E4a_cHElang/0.jpg)](https://youtu.be/E4a_cHElang)
