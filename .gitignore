@@ -36,3 +36,5 @@ server/gemini-key.txt
 
 # TypeScript build cache
 *.tsbuildinfo
+
+.benchmarks

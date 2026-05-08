@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemma 4 Error Log Simplifier</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🔍 Gemma 4 Error Log Simplifier</h1>
+    <p class="subtitle">
+      Paste an error message, stack trace, or log snippet to get a clearer debugging summary.
+    </p>
+
+    <form method="post" action="/" id="analyzeForm">
+      <label for="error_log">Error Log</label>
+      <textarea
+        id="error_log"
+        name="error_log"
+        rows="18"
+        placeholder="Paste your error log here (Python, Java, JavaScript, etc.)..."
+      >{{ error_log }}</textarea>
+
+      <button type="submit" id="analyzeBtn">Analyze</button>
+    </form>
+
+    {% if error_message %}
+      <section class="card error">
+        <h2>Error</h2>
+        <div class="result">{{ error_message }}</div>
+      </section>
+    {% endif %}
+
+    {% if result %}
+      <section class="card">
+        <h2>Analysis Result</h2>
+        <div class="result">{{ result }}</div>
+      </section>
+    {% endif %}
+  </main>
+
+  <!-- ⭐ Loading UX -->
+  <script>
+    const form = document.getElementById("analyzeForm");
+    const btn = document.getElementById("analyzeBtn");
+
+    form.addEventListener("submit", () => {
+      btn.innerText = "Analyzing...";
+      btn.disabled = true;
+    });
+  </script>
+</body>
+</html>
