@@ -38,3 +38,5 @@ server/gemini-key.txt
 *.tsbuildinfo
 
 .benchmarks
+
+passion-jar-keypair.json
