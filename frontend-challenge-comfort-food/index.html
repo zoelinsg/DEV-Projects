@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Warm Table is a fictional Taiwanese comfort-soup house serving six slow-simmered soups."
+  >
+  <meta name="theme-color" content="#f6f0e8">
+
+  <title>Warm Table — Taiwanese Comfort Soups</title>
+
+  <link
+    rel="preload"
+    href="assets/garlic-chicken.webp"
+    as="image"
+    type="image/webp"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Warm Table, back to top">
+        <span class="brand-icon" aria-hidden="true">🍲</span>
+        <span>Warm Table</span>
+      </a>
+
+      <nav
+        id="primary-navigation"
+        class="site-navigation"
+        aria-label="Primary navigation"
+        data-navigation
+      >
+        <a href="#story">Our story</a>
+        <a href="#finder">Soup finder</a>
+        <a href="#menu">The soups</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to evening theme"
+          aria-pressed="false"
+          data-theme-toggle
+        >
+          <span aria-hidden="true">☾</span>
+          <span>Evening</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Taiwanese comfort soups</p>
+        <h1 id="hero-title">A warm bowl for the day you had.</h1>
+        <p class="hero-lede">
+          Six slow-simmered soups inspired by familiar ingredients,
+          generous kitchens, and evenings that deserve a softer ending.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Explore the soups</a>
+          <a class="text-link" href="#finder">
+            Find your comfort bowl
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <ul class="hero-points" aria-label="Warm Table highlights">
+          <li>Small-pot simmered</li>
+          <li>Herbs and roots</li>
+          <li>Made for sharing</li>
+        </ul>
+      </div>
+
+      <figure class="hero-image">
+        <img
+          src="assets/garlic-chicken.webp"
+          alt="A steaming clay pot of garlic chicken soup on a wooden table"
+          width="2048"
+          height="1117"
+        >
+        <figcaption>Garlic Chicken Soup</figcaption>
+      </figure>
+    </section>
+
+    <section class="story section-shell" id="story" aria-labelledby="story-title">
+      <div class="story-copy">
+        <p class="eyebrow">Our story</p>
+        <h2 id="story-title">The kitchen starts before you arrive.</h2>
+        <p class="story-lede">
+          Garlic softens. Ginger warms the oil. Roots and herbs give the broth
+          their time. By the time you sit down, the room already feels different.
+        </p>
+        <p>
+          Warm Table is a fictional Taiwanese soup house inspired by the bowls
+          people reach for when the weather changes, work runs late, or home feels
+          a little too far away.
+        </p>
+
+        <div class="story-values" aria-label="What guides the kitchen">
+          <div>
+            <strong>Patient</strong>
+            <span>Time is part of the recipe.</span>
+          </div>
+          <div>
+            <strong>Familiar</strong>
+            <span>Ingredients that already feel like home.</span>
+          </div>
+          <div>
+            <strong>Generous</strong>
+            <span>Every pot is meant to be shared.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-gallery" aria-label="A selection of soups from Warm Table">
+        <figure class="story-image story-image-large">
+          <img
+            src="assets/ginger-duck.webp"
+            alt="A steaming pot of ginger duck soup"
+            width="2048"
+            height="1117"
+            loading="lazy"
+          >
+        </figure>
+
+        <figure class="story-image">
+          <img
+            src="assets/ginger-sea-bass.webp"
+            alt="A bowl of ginger sea bass soup"
+            width="1408"
+            height="768"
+            loading="lazy"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="finder" id="finder" aria-labelledby="finder-title">
+      <div class="section-shell finder-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Soup finder</p>
+          <h2 id="finder-title">What kind of comfort do you need?</h2>
+          <p>
+            Choose a feeling and we will suggest one bowl from the kitchen.
+          </p>
+        </div>
+
+        <div class="finder-layout">
+          <div class="mood-controls" role="group" aria-label="Choose a comfort mood">
+            <button
+              class="mood-button is-active"
+              type="button"
+              data-mood="gentle"
+              aria-pressed="true"
+            >
+              Something gentle
+            </button>
+            <button
+              class="mood-button"
+              type="button"
+              data-mood="warming"
+              aria-pressed="false"
+            >
+              I need to warm up
+            </button>
+            <button
+              class="mood-button"
+              type="button"
+              data-mood="nourishing"
+              aria-pressed="false"
+            >
+              Something nourishing
+            </button>
+            <button
+              class="mood-button"
+              type="button"
+              data-mood="hearty"
+              aria-pressed="false"
+            >
+              I am truly hungry
+            </button>
+          </div>
+
+          <article class="recommendation" aria-live="polite">
+            <figure class="recommendation-image">
+              <img
+                src="assets/ginger-sea-bass.webp"
+                alt="A bowl of ginger sea bass soup"
+                width="1408"
+                height="768"
+                data-result-image
+              >
+            </figure>
+
+            <div class="recommendation-copy">
+              <p class="eyebrow">Your comfort bowl</p>
+              <h3 data-result-name>Ginger Sea Bass Soup</h3>
+              <p data-result-description>
+                A clear fish broth with fresh ginger, scallion, and a clean finish.
+                Light enough for a tired day and warm enough to settle into.
+              </p>
+
+              <dl class="recommendation-details">
+                <div>
+                  <dt>Character</dt>
+                  <dd data-result-character>Clean and bright</dd>
+                </div>
+                <div>
+                  <dt>Best moment</dt>
+                  <dd data-result-moment>Quiet afternoons</dd>
+                </div>
+                <div>
+                  <dt>Simmer</dt>
+                  <dd data-result-time>45 minutes</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu section-shell" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading menu-heading">
+        <div>
+          <p class="eyebrow">The soups</p>
+          <h2 id="menu-title">Six bowls, each with its own kind of warmth.</h2>
+        </div>
+        <p>
+          Browse the full collection. Every image is part of the story,
+          so the food stays at the center of the page.
+        </p>
+      </div>
+
+      <div class="soup-grid">
+        <article class="soup-card">
+          <img
+            src="assets/garlic-chicken.webp"
+            alt="A steaming clay pot of garlic chicken soup"
+            width="2048"
+            height="1117"
+            loading="lazy"
+          >
+          <div class="soup-card-copy">
+            <p class="soup-note">Softly nourishing</p>
+            <h3>Garlic Chicken Soup</h3>
+            <p>
+              Whole garlic cloves mellow into a round, savory broth with tender
+              chicken and a gentle ginger warmth.
+            </p>
+          </div>
+        </article>
+
+        <article class="soup-card">
+          <img
+            src="assets/peanut-pig-trotter.webp"
+            alt="A bowl of peanut and pig trotter soup"
+            width="1408"
+            height="768"
+            loading="lazy"
+          >
+          <div class="soup-card-copy">
+            <p class="soup-note">Rich and satisfying</p>
+            <h3>Peanut Pig Trotter Soup</h3>
+            <p>
+              Pork trotter and peanuts simmer until the broth turns silky,
+              rounded out with ginger and scallion.
+            </p>
+          </div>
+        </article>
+
+        <article class="soup-card">
+          <img
+            src="assets/ginger-duck.webp"
+            alt="A steaming earthenware pot of ginger duck soup"
+            width="2048"
+            height="1117"
+            loading="lazy"
+          >
+          <div class="soup-card-copy">
+            <p class="soup-note">Deeply warming</p>
+            <h3>Ginger Duck Soup</h3>
+            <p>
+              Duck, old ginger, sesame oil, and rice wine create a bold broth
+              made for cold evenings.
+            </p>
+          </div>
+        </article>
+
+        <article class="soup-card">
+          <img
+            src="assets/ginger-sea-bass.webp"
+            alt="A bowl of sea bass soup topped with fine ginger strips"
+            width="1408"
+            height="768"
+            loading="lazy"
+          >
+          <div class="soup-card-copy">
+            <p class="soup-note">Clear and bright</p>
+            <h3>Ginger Sea Bass Soup</h3>
+            <p>
+              Sea bass, fine ginger strips, and scallion in a clear broth
+              with a clean, restorative finish.
+            </p>
+          </div>
+        </article>
+
+        <article class="soup-card">
+          <img
+            src="assets/he-shou-wu-chicken.webp"
+            alt="A dark herbal chicken soup in a black clay pot"
+            width="1408"
+            height="768"
+            loading="lazy"
+          >
+          <div class="soup-card-copy">
+            <p class="soup-note">Earthy herbal depth</p>
+            <h3>Fo-Ti Herbal Chicken Soup</h3>
+            <p>
+              Chicken, fo-ti root, red dates, and goji berries simmer into
+              an earthy, full-bodied broth.
+            </p>
+          </div>
+        </article>
+
+        <article class="soup-card">
+          <img
+            src="assets/astragalus-lamb.webp"
+            alt="A pot of lamb soup with astragalus and angelica root"
+            width="1408"
+            height="768"
+            loading="lazy"
+          >
+          <div class="soup-card-copy">
+            <p class="soup-note">Herbal and warming</p>
+            <h3>Astragalus and Angelica Lamb Soup</h3>
+            <p>
+              Lamb, astragalus, angelica root, ginger, red dates,
+              and goji berries in a fragrant broth.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="visit section-shell" id="visit" aria-labelledby="visit-title">
+      <div class="visit-card">
+        <figure class="visit-image">
+          <img
+            src="assets/astragalus-lamb.webp"
+            alt="A warm herbal lamb soup on a wooden table"
+            width="1408"
+            height="768"
+            loading="lazy"
+          >
+        </figure>
+
+        <div class="visit-content">
+          <div class="visit-copy">
+            <p class="eyebrow">Come in from the cold</p>
+            <h2 id="visit-title">There is always a pot on the stove.</h2>
+            <p>
+              18 Lantern Street · Tuesday–Sunday · 11:30 AM–9:00 PM
+            </p>
+          </div>
+
+          <form class="newsletter" data-newsletter-form novalidate>
+            <label for="email">Receive one quiet soup note each month.</label>
+            <div class="newsletter-row">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+                aria-describedby="newsletter-status"
+              >
+              <button class="button button-primary" type="submit">Join the table</button>
+            </div>
+            <p
+              id="newsletter-status"
+              class="newsletter-status"
+              role="status"
+              aria-live="polite"
+              data-newsletter-status
+            ></p>
+          </form>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <a class="footer-brand" href="#top">
+          <span aria-hidden="true">🍲</span>
+          <strong>Warm Table</strong>
+        </a>
+        <p>A fictional Taiwanese comfort-soup house.</p>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
